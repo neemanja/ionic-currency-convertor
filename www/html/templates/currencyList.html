@@ -1,0 +1,17 @@
+<ion-modal-view class="curr-modal">
+    <div>
+        <header class="bar bar-header bar-positive">
+            <h1 class="title">Izaberite valutu</h1>
+            <div class="button button-clear" ng-click="currModal.hide()"><span class="icon ion-close"></span></div>
+        </header>
+        <ion-content class="modal-color" has-header="true" padding="true">
+            <br/><br/>
+            <ion-scroll style="height:100vh;">
+                <li ng-repeat="option in selectCurr.availableOptions" class="wrapp-curr-dropdown__box" ng-click="proba(option, selectCurr)">
+                    <i class="wrapp-curr-dropdown__box__pict"><img class="wrapp-curr-dropdown__box__pict__img" ng-style="{'background-image':'url(img/flags/{{option}}.png)'}"></i>
+                    <span class="wrapp-curr-dropdown__box__text">{{option | uppercase}}</span>
+                </li>      
+            </ion-scroll>     
+        </ion-content>
+    </div>
+</ion-modal-view>

@@ -1,0 +1,23 @@
+{
+  "name": "currency_converter",
+  "app_id": "",
+  "type": "ionic1",
+  "integrations": {
+    "gulp": {},
+    "cordova": {}
+  },
+  "watchPatterns": [
+    "scss/**/*"
+  ],
+  "proxies": [
+        {
+            "path": "/curr",
+            "proxyUrl": "http://api.kursna-lista.info/b7b80a59415046c33449b6a2a96bd4d8/kursna_lista"
+        },
+        {
+            "path": "/currencyApi1",
+            "proxyUrl": "http://api.kursna-lista.info/b7b80a59415046c33449b6a2a96bd4d8/kursna_lista"
+        }
+    ]
+}
+

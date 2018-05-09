@@ -1,0 +1,15 @@
+<div class="wrapp-curr">      
+    <div id="dd" class="wrapp-curr-dropdown" ng-click="clickModal()" >
+        <div class="wrapp-curr-dropdown__box"  >
+            <i class="wrapp-curr-dropdown__box__pict"><img class="wrapp-curr-dropdown__box__pict__img" ng-style="{'background-image':imgStyle()}"></i>
+            <span class="wrapp-curr-dropdown__box__text" ng-model="currSelect.model" >{{currSelect.model | uppercase}}</span>
+        </div>            
+        <!--ul class="dropdown"  ng-class="{'togg' : toggle }" ng-repeat="option in currSelect.availableOptions">
+            <li class="wrapp-curr-dropdown__box" ng-click="changeCurr(option)">
+                <i class="wrapp-curr-dropdown__box__pict"><img class="wrapp-curr-dropdown__box__pict__img" ng-style="{'background-image':'url(img/flags/{{option}}.png)'}"></i>
+                <span class="wrapp-curr-dropdown__box__text">{{option | uppercase}}</span>
+            </li>
+        </ul-->
+    </div>
+    <input class="wrapp-curr__input" type="tel" ng-model="currInput" my-async-change="currInputChange()"/>
+</div>

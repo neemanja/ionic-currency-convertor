@@ -1,0 +1,20 @@
+<ion-view title="Kalkulator">
+    <ion-content on-swipe-left="onSwipeLeft()">
+        <div class="cc-wrapper">
+            <div class="cc-wrapper__title">
+                <h1 style="color: white;">Konvertor  valuta</h1>
+            </div>
+            <div class="cc-wrapper__sections">
+                <currency-dir curr-select="selectCurr1" curr-select-two="selectCurr2" curr-input="$parent.inputCurr1" curr-input-change="inputCurr1Change()" curr-select-click="openModal(selectCurr1)"></currency-dir> 
+                <div class="cc-wrapper__sections__img">
+                    <img src="img/swap.svg"/ ng-click="swap(selectCurr1.model, selectCurr2.model)"/>
+                </div>
+                 <currency-dir curr-select="selectCurr2" curr-select-two="selectCurr1" curr-input="$parent.inputCurr2" curr-input-change="inputCurr2Change()" curr-select-click="openModal(selectCurr2)"></currency-dir>
+            </div>
+            <br/><br/>
+            <div class="cc-wrapper__button">
+                <button class="cc-wrapper__button__btn" name="resetBtn" ng-click="resetBtn()">RESET</button>
+            </div>
+        </div>
+      </ion-content>
+</ion-view>

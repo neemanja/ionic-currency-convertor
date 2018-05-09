@@ -1,0 +1,28 @@
+<ion-view title="Kursna lista">
+    <ion-content on-swipe-right="onSwipeRight()">
+      <br/>
+      <div class="cr-wrapper">
+        <div class="cr-wrapper__table-title">Kursna lista na dan {{currencyListDate}}</div>
+        <div class="cr-wrapper__table-header">
+          <div class="cr-wraper__table-header_col">Valuta</div>
+          <div class="cr-wraper__table-header_col">Kupovni</div>
+          <div class="cr-wraper__table-header_col">Srednji</div>
+          <div class="cr-wraper__table-header_col">Prodajni</div>
+        </div>
+        <div class="cr-wrapper_table-body" ng-repeat="(curr, val) in currencyList">
+          <div class="cr-wrapper_table-body_col-one">
+            <div class="cr-wrapper_table-body_col-one_img" ng-style="{'background-image':'url(img/flags/{{curr}}.png)'}"></div>
+            <div class="cr-wrapper_table-body_col-one_curr">{{curr | uppercase}}</div>
+          </div>
+          <div class="cr-wrapper_table-body_col">
+            <div class="cr-wrapper_table-body_col_val">{{val.kup}}</div>
+          </div>
+          <div class="cr-wrapper_table-body_col">
+            <div class="cr-wrapper_table-body_col_val">{{val.sre}}</div>
+          </div>
+          <div class="cr-wrapper_table-body_col">
+            <div class="cr-wrapper_table-body_col_val">{{val.pro}}</div>
+        </div>
+      </div>
+    </ion-content>
+</ion-view>
