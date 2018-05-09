@@ -21,3 +21,7 @@ This is an application which was developed by Ionic 1, which is called the api-k
 1.Add platform Android: ionic cordova platform add android
 
 2.Run Android emulator: ionic cordova run android
+
+## Appliication preview
+
+<a href="https://neemanja.github.io/ionic-currency-convertor/www/">currency-converter</a>
